@@ -64,16 +64,16 @@ for i in range (M+1):
     x.append(i) #adding elements to list x
 
 sf=np.sum(f) #sum of frequency - sf
-# calculating probability distribution
 p=list()
 for i in range(M+1):
     p.append(f[i]/sf) # calculating probability distribution
 #calculate mean
 mean=np.inner(x,p) # multiplying corresponding element - inner function
 EX2=np.inner(np.square(x),p) #to find variance = ex^2 - (ex)^2
-# variance
+
 var=EX2-mean**2 
-# standard deviation
+
+
 SD=np.sqrt(var)
 
 print("The Mean arrival rate is %.3f"%mean)
